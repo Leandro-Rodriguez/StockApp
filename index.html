@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock CORESA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock CORESA</h1>
+        <div class="input-group">
+            <input type="text" id="modeloInput" placeholder="Ingrese modelo">
+            <input type="number" id="cantidadInput" placeholder="Ingrese cantidad" min="1" value="1">
+        </div>
+        <div class="button-group">
+            <button onclick="agregarModelo()">Agregar Modelo</button>
+            <button onclick="borrarHistorial()">Borrar Historial</button>
+            <button onclick="exportarExcel()">Exportar a Excel</button>
+        </div>
+        <div id="historialModelos"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
